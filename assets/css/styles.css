@@ -142,8 +142,39 @@ body {
 
 /*//////////////////////////*/
 /* body */
+
+.slider {
+    position: relative;
+    width: 1440px;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+/* slides container */
+.slides {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+/* each slide */
+.slide {
+    width: 1440px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 1440px;
+    height: 100%;
+    object-fit: cover;
+}
+
 .panel {
-    /* position: fixed; */
+    position: absolute;
+    top: 450px;
     background: #eee;
     border: 2px solid rgb(121, 119, 119);
     border-radius: 20px;
@@ -152,7 +183,6 @@ body {
     padding: 50px;
     margin-left: 300px;
     margin-right: 300px;
-    margin-top: 300px;
     margin-bottom: 50px;
     align-items: center;
     justify-content: center;
@@ -214,6 +244,8 @@ input {
 
 /* after the input panel */
 .heading {
+    position: relative;
+    top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,6 +257,8 @@ h2 {
 }
 
 .offer-section {
+    position: relative;
+    top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,6 +268,8 @@ h2 {
 }
 
 .ordernow-section {
+    position: relative;
+    top: 200px;
     display: flex;
     flex-direction: row;
     margin-top: 100px;
@@ -281,6 +317,8 @@ h2 {
 /* footer */
 
 .kfc-footer {
+    position: relative;
+    top: 200px;
     background: rgb(36, 34, 34);
     color: white;
     padding: 40px 80px 30px;
@@ -345,19 +383,25 @@ h2 {
 }
 
 /* COPYRIGHT */
-.copywrite{
+.copywrite {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .footer-copy {
     font-size: 12px;
     color: #aaaaaa;
-    
+
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+    .navbar-center {
+        display: none;
+
+    }
+
     .kfc-footer {
         padding: 30px 20px;
     }
@@ -375,13 +419,6 @@ h2 {
 
     .footer-columns {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    @media (max-width: 900px) {
-        .navbar-center {
-            display: none;
-            /* hide center links; you can later attach them to burger menu */
-        }
     }
 
     @media (max-width: 600px) {
