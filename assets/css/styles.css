@@ -79,6 +79,10 @@ body {
     width: 40px;
     height: 3px;
     background: #e4002b;
+    
+}
+.nav-link.active{
+    font-weight: bold;
 }
 
 /* RIGHT SIDE: AUTH + CART */
@@ -427,6 +431,13 @@ h2 {
         }
     }
 
-    /* simple responsiveness */
 
 }
+/* menu page */
+.btn-white{
+    background: white;
+    color: #aaaaaa;
+    border: 2px solid grey;
+    border-radius: 30px;
+    padding:5px 15px 5px;
+} 
