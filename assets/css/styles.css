@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #8a8a8a;
 }
 
 /* LEFT SIDE: LINES + LOGO */
@@ -47,7 +47,7 @@ body {
 
 
 .logo {
-    width: 120px;
+    width: 115px;
 }
 
 /* CENTER: NAV LINKS */
@@ -441,3 +441,91 @@ h2 {
     border-radius: 30px;
     padding:5px 15px 5px;
 } 
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+}
+.btn-container{
+    columns: 1;
+    margin: 30px 0px 30px 0px;
+}
+.btn-container button{
+    background: white;
+    color: black;
+    border:2px solid #95172e;
+    border-radius: 30px;
+    padding: 5px 15px 5px;
+    margin: 5px;
+    
+    
+
+}
+button.active{
+    background: #95172e;
+    color: white;
+    font-weight: bold;
+}
+.meal-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.meal-container .item{
+    display: grid;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 10px 30px 10px;
+
+}
+h6{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.meal-container .item p{
+    display: flex;
+    color: #8a8a8a;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.btn-add{
+    background-color: #95172e;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.cart-panel{
+    background: white;
+    width: 475px;
+    height: 650px;
+    padding: 30px;
+    position: relative;
+    border-radius: 30px;
+    
+    
+}
+.btn-checkout{
+    position: absolute;
+    width: 400px;
+    background: #e4002b;
+    color: white;
+    width: 356px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding:10px 20px 10px 20px;
+    top: 520px;
+    right: 0;
+    
+}
